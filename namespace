@@ -1,0 +1,25 @@
+Kubernetes namespaces:
+kubectl get ns : command to get the namespace
+
+NAME                 STATUS   AGE
+default              Active   16d - for resources without a namespace
+devops-tools         Active   16d
+kube-node-lease      Active   16d
+kube-public          Active   16d - readable by everyone
+kube-system          Active   16d - kubernetes internal system pods
+local-path-storage   Active   16d
+tharun               Active   16d
+
+to create new namespace:
+kubectl create ns i27-dev -> command
+namespace/i27-dev created
+nvdittakavi@Tharuns-MacBook-Pro grafana-docker % kubectl get ns -> command
+NAME                 STATUS   AGE
+default              Active   16d
+devops-tools         Active   16d
+i27-dev              Active   8s -> new namespace created
+kube-node-lease      Active   16d
+kube-public          Active   16d
+kube-system          Active   16d
+local-path-storage   Active   16d
+tharun               Active   16d
